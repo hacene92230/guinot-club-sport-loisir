@@ -1,0 +1,122 @@
+Gestion de club de Sport & Loisirs 
+du CRP GUINOT / Guinot-Sport-Loisirs
+
+Le Club de Sports et de Loisirs du CRP Paul & Liliane GUINOT souhaite informatiser la gestion de ses activités sportives et loisir, et vous demande de concevoir une application Web & Web mobile assurant les fonctionnalités suivantes :
+
+BACK-OFFICE
+Côté back office, le futur logiciel, baptisé Guinot-Sport-Loisirs devrait permettre :
+	Au secrétariat du CRP et aux responsables du club de :
+1)	créer le catalogue des activités (voir la liste des activités) proposées sur le site internet du club,
+2)	établir une liste des stagiaires selon les activités choisies,
+3)	Établir un calendrier des activités selon les jours,
+4)	Gérer le planning journalier / Hebdomadaires des activités.
+
+	Aux comptables de gérer les règlements des abonnements des adhérents aux activités (remises de chèques, échéanciers, impayés…)
+	aux responsables  de chaque activité de consulter le calendrier (journalier / hebdomadaire ) de chaque activités, mis en place par le sécretariat,
+	À la Direction d’avoir une statistique des fréquentations,
+	Aux Formateurs d’avoir accès à la liste (journalier/hebdomadaire) des activités et des participants, afin de justifier les stagiaires absents des cours
+
+
+ACTIVITES 
+Les activités proposées sont les suivantes :
+1.	Auto-Défense
+a.	Karaté,
+b.	Taekwondo,
+c.	Judo,
+d.	Boxe 
+2.	Relaxation :
+a.	Gymnastique,
+b.	Natation,
+c.	Yoga,
+d.	Atelier Psychomoteur,
+
+3.	Loisirs :
+a.	Art,
+b.	Peinture,
+c.	Poterie,
+d.	Décoration
+
+
+
+
+FRONT-OFFICE : 
+	Gestion des Internautes 
+Guinot-Sport-Loisirs® devrait permettre à tous les stagiaires du CRP de :
+	consulter la liste des activités proposées 
+	choisir un ou plusieurs abonnements 
+	s’enregistrer à ces activités choisies,
+	recevoir un mail de confirmation, une fois que l’activité enregistrée est acceptée par la Direction,
+	payer la liste des activités choisis,  
+	Mais pour valider leur commande ils doivent avoir un compte et s’y connecter
+
+	Gestion des adhérents,  
+Guinot-Sport-Loisirs® devrait permettre aux adhérents du club de
+	s’abonner aux activités proposées,
+	Seuls les adhérents à Guinot-Sport-Loisirs® peuvent valider un panier contenant un (ou plusieurs) abonnement(s)t à une ou plusieurs activités  et le régler en ligne. 
+	Pour être adhérent il faut avoir créé son compte sur le site via l’application Guinot-Sport-Loisirs®.
+	L’adhérent doit s’être connecté avec son login pour pouvoir valider son panier, payer en ligne, gérer son compte, visualiser l’historique le concernant, bref pour toutes les actions qui lui sont propres.
+
+        Gestion des abonnements
+	Chaque abonnement est annuel et a un tarif spécifique suivant l’activité choisie.
+	Le paiement en ligne doit être proposé, mais  Il reste possible de payer le montant de l’abonnement par chèque(s) remis au comptable du Club Guinot-Sport-Loisirs® (par courrier ou directement à la permanence administrative). 
+	Il est possible de régler le montant d’un abonnement en plusieurs fois, avec plusieurs chèques, en indiquant la date de dépôt souhaitée pour chaque chèque.
+
+
+NB : ce TP est le fil conducteur du module Drupal. On l’élaborera soit induviduellement soit à deux pour la note finale en Drupal.
+
+ 
+TRAVAIL A FAIRE :
+I.	 ANALYSE
+1)	Diagramme fonctionnel (statique)
+Elaborez le diagramme des cas d’utilisation de la future application Guinot-Sport-Loisirs® pour tout le monde sauf Abdel & Hacene qui produiront plutôt les details des User-Case,
+2)	Diagramme structurel (Optionnel)
+Elaborez le diagramme de classes de la future application Guinot-Sport-Loisirs®
+
+3)	A partir du diagramme de Use-Cases et du Diagramme de classe, proposez les interface utilisables possibles
+a.	Proposition des menus 
+	le menu Principal devrait contenir obligatoirement en plus des liens suivants(accueil / à propos du Club et du CRP / Contact )
+b.	Des Taxonomies,
+c.	Tags,
+d.	Utilisateurs,
+e.	Et des contenus.
+
+II.	TOOLS
+1)	Mettre en place l’application de Gestion du club de sport tel que proposé,
+2)	Environnement souhaité
+a.	Drupal 8.9^
+b.	Php 7^
+
+III.	Manuel
+	Présentation de L’application
+	Fonctionnalité de l’application
+	Méthode d’utilisation de l’application
+----------------------------------------------------------------------
+Actors:
+        -secretaire
+                -creer/gerer le catalog 
+                -établir une liste des stagiaires selon les activités choisies,
+                -Établir un calendrier des activités selon les jours,
+                -Gérer le planning journalier / Hebdomadaires des activités.
+        -comptable
+                -gérer les règlements des abonnements des adhérents aux activités
+                 (remises de chèques, échéanciers, impayés…)
+        -responsables  de chaque activité:
+                -consulter le calendrier (journalier / hebdomadaire ) 
+                de chaque activités, mis en place par le sécretariat,
+        -Direction:
+                -avoir une statistique des fréquentations,
+        -Formateur:
+                -avoir accès à la liste (journalier/hebdomadaire) 
+                des activités et des participants, afin de justifier les stagiaires absents des cours
+        -utilisateur ( non adhérant):
+                -consulter la liste des activités proposées 
+                -choisir un ou plusieurs abonnements 
+                -s’enregistrer à ces activités choisies,
+                -recevoir un mail de confirmation, une fois que l’activité enregistrée est acceptée par la Direction,
+                -payer la liste des activités choisis,  
+        -utilisateur(adherant):
+                herite les droit de l'utilisateur et encore:
+                -pour valider leur commande ils doivent avoir un compte et s’y connecter
+
+
+
